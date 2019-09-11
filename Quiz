@@ -1,0 +1,49 @@
+import java.util.Scanner;
+
+public class ProgramOne
+{
+	public static void main(String []args)
+	{
+		String input;
+		
+		Scanner keyboard = new Scanner(System.in);
+		
+		System.out.print("Enter a day of the week: ");// user enters a day of the week
+		input = keyboard.nextLine();
+		
+		//Depending on what user enters a different message appears
+		
+		if (input.equalsIgnoreCase("Sunday"))
+		{
+			System.out.println("Sunday is the first day of the week");
+		}
+		else if (input.equalsIgnoreCase("Monday"))
+		{
+			System.out.println("Monday is the second day of the week");
+		}
+		else if (input.equalsIgnoreCase("Tuesday"))
+		{
+			System.out.println("Tuesday is the third day of the week");
+		}
+		else if (input.equalsIgnoreCase("Wednesday"))
+		{
+			System.out.println("Wednesday is the forth day of the week");
+		}
+		else if (input.equalsIgnoreCase("Thursday"))
+		{
+			System.out.println("Thursday is the fifth day of the week");
+		}
+		else if (input.equalsIgnoreCase("Friday"))
+		{
+			System.out.println("Friday is the sixth day of the week");
+		}
+		else if (input.equalsIgnoreCase("Saturday"))
+		{
+			System.out.println("Saturday is the seventh day of the week");
+		}
+		else  
+		{
+			System.out.println("That is not a day of the week!");// if user does not enter a valid day of the week
+		}
+	}
+}
